@@ -44,3 +44,35 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## About Project Structure
+
+In the `src` directory, there are following folders:
+
+- `assets`
+- `components`
+- `helpers`
+- `hooks`
+- `layouts`
+- `pages`
+- `routes`
+- `services`
+- `store`
+- `styles`
+- `types`
+
+Let's see what each of the folders are standing for.
+
+###Assets
+
+This folder as the name itself says, will hold all the assets (images, icons, videos, etc.) of our app.
+
+`images` and `icons` folders are already there.
+
+###Components
+
+This folder is responsible for holding all the components that being used in our app.
+
+`Elements` folder should hold the smallest components that can exist on their own. Those components should not have any business logic and should be independent, thus being able to exist on their own. For example, we can put `Button` and `Loader` components there, that can be used in more complex components.
+
+`Modules` folder should hold more complex components, but still those that don't have or have a very small amount of business logic. They should be able to exist on their own as well. `Navbar` and `Search` components would be a good example.
