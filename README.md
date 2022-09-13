@@ -63,13 +63,13 @@ In the `src` directory, there are following folders:
 
 Let's see what each of the folders are standing for.
 
-###Assets
+### Assets
 
 This folder as the name itself says, will hold all the assets (images, icons, videos, etc.) of our app.
 
 `images` and `icons` folders are already there.
 
-###Components
+### Components
 
 This folder is responsible for holding all the components that being used in our app.
 
@@ -79,42 +79,42 @@ This folder is responsible for holding all the components that being used in our
 
 Of course `Elements` and `Modules` folders would not be enough to hold all the needed components. So it would be comfortable to have appropriate folders which be holding components that have same "logic" and "context". For example `Profile` folder that could hold all the components that somehow related to profile entity. It could be `ProfileAvatar` and `ProfileInfo`...
 
-###Contexts
+### Contexts
 
 Hold here all the context providers.
 
-###Helpers
+### Helpers
 
 The name of this folder says pretty much everything about it. It is good to put here all the "helper" functions used throughout the whole app. The examples are `formatDate` and `truncateText` functions.
 
-###Hooks
+### Hooks
 
 Just put all the custom hooks used throughout the whole app in this folder. A good example would be `useDebounce` hook which is often used in search inputs for optimization.
 
-###Layouts
+### Layouts
 
 Usually, there are only two layouts in apps: `BaseLayout` and `LoginLayout`. The first one used when the user is logged in, that layout will normally display appropriate content of a specific page wrapped in a `Navbar` and `Footer` components. And the second one will be a wrapper for unauthenticated pages. But of course, there can be more "layouts" in your app.
 
-###Pages
+### Pages
 
 This folder should hold components that are responsible for pages. The important thing here is to not overcomplicate the component with the complex logic and a lot of jsx. For example, the `ProfilePage` component stored inside the `Pages` folder cold use `ProfileAvatar` and `ProfileInfo` components described above. Consider "page components" as containers for smaller "pieces" that share the same business logic.
 
-###Routes
+### Routes
 
 This one is just holding single file `index.tsx`, which will contain all of the routes. Of course you can rearange this, splitting the "routes" logic into multiple files.
 
-###Services
+### Services
 
 Why do we call them Services and not some name else? Honestly there is no right answer for this, at least in my opinion. In simple words, services are just ordinary classes which will contain functions of your own choice, so call them how you like.
 
-###Store
+### Store
 
 Basically the logic for initialization of a store.
 
-###Styles
+### Styles
 
 Put here the global styling. This folder contains `globals.scss` file with example of scss code. Feel free to delete the file and create your own, or change it to css in case you are not familiar with the scss. But trust me, it is worth learning scss =)
 
-###Ts
+### Ts
 
 This folder contains one of the ways for managing types, enums, and interfaces. It is a good practice to not hold them at the component level unless it is not a props type or an interface.
