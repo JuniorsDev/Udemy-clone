@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const BaseLayout = () => {
-  return <div>BaseLayout</div>;
+interface IBaseLayoutProps {
+  children: React.ReactNode;
+}
+
+const BaseLayout: FC<IBaseLayoutProps> = ({ children }) => {
+  return <div>{children}</div>;
 };
 
 export default BaseLayout;

@@ -2,7 +2,9 @@ import React from 'react';
 import BaseLayout from '../../layouts/BaseLayout';
 
 const ProfilePage = () => {
-  return <BaseLayout></BaseLayout>;
+  return <BaseLayout>
+    <div>Profile page</div>
+  </BaseLayout>;
 };
 
 export default ProfilePage;
